@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #b39ddb;
+}
+#clock-body {
+    height: 40vw;
+    width: 40vw;
+    border-radius: 50%;
+    margin: auto;
+    background: url("clock.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+    margin-top: 40px;
+    position: relative;
+    box-shadow: inset 10px 10px 15px rgba(0,0,0,0.2),
+                inset -10px -10px 10px rgba(0,0,0,0.1),
+                10px 10px 15px rgba(0,0,0,0.2),
+                -10px -10px 10px rgba(255, 255, 255, 0.1);
+}
+#clock-dial {
+    height: 1.4vw;
+    width: 1.4vw;
+    background-color: brown;
+    border-radius: 50%;
+    position: absolute;
+    top: 19.2vw;
+    left: 19.2vw;
+    z-index: 4;
+}
+#hour-hand {
+    height: 9vw;
+    width: 0.6vw;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 11vw;
+    left: 19.6vw;
+    z-index: 1;
+    transform-origin: bottom;
+    box-shadow: -3px 3px 5px rgba(0,0,0,0.2);
+}
+#minute-hand {
+    height: 12vw;
+    width: 0.3vw;
+    border-radius: 50%;
+    background-color: grey;
+    position: absolute;
+    top: 8vw;
+    left: 19.8vw;
+    z-index: 2;
+    transform-origin: bottom;
+    box-shadow: -3px 3px 5px rgba(0,0,0,0.2);
+}
+#second-hand {
+    height: 12vw;
+    width: 0.3vw;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 8vw;
+    left: 19.8vw;
+    z-index: 3;
+    transform-origin: bottom;
+    box-shadow: -3px 3px 5px rgba(0,0,0,0.2);
+}
+#credits {
+    font-size: 3vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #263238;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
